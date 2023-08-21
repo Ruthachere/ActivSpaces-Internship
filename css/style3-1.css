@@ -1,7 +1,4 @@
 
-ul{
-    padding-right: 10px;
-}
 .sec{
     outline: none;
 }
@@ -9,33 +6,32 @@ li {
     font-size: 13px;
     font-weight: 500;
     padding-right: 10px;
+
 }
 li a{
-    margin-top: -10px;
+    margin-top: -7px;
 }
 .icon{
-    padding-left: 10px;
+    padding-left: 35px;
     font-size: 18px;
     color: black;
 }
 .icons{
-    padding-left: 10px;
+    padding-left: 15px;
     font-size: 18px;
     color: black;
 }
 .img{
     width: 20px ;
-    margin-left: 7px;
     height: 20px;
     object-fit: cover;
-   
+   margin-left: 7px;
+   margin-top: -10px;
 }
 .li{
     border-right: .5px solid black;
 }
-.li a{
-    margin-top: -10px;
-}
+
     
 ::placeholder{
     font-size: 13px;
@@ -44,153 +40,156 @@ li a{
 .ic{
     font-size: 12px;
 }
-.h7{
+.head{
+    font-size: 13px;
+}
+.para2{
     font-size: 14px;
+    color: gray;
+    font-weight: 500;
 }
-
-.image{
-    width: 70px;
-    height:70px;
-    object-fit: cover;
-    border-radius: 100%;
+.span1{
+    color: black;
+    font-size:13px;
 }
-.para-one{
-    font-size: 14px;
-}
-.para-1{
+.text-primary{
     font-size: 15px;
 }
-.para-2{
-    float: right;
-}
-.para-two{
-    font-size: 17px;
-    text-align: center;
-    font-weight: 500;
-    font-family: 'Helvetica Neue', sans-serif;
+.image{
+    width: 40px;
+     height: 40px;
+      object-fit: cover;
 }
 .list{
-    font-size: 14px;
-    color: gray;
-}
-.icon-1{
-    margin-top: -3px;
-    margin-left: -5px;
-    color: gray;
-}
-.head-one{
-    font-size: 14px;
-}
-.head-two{
-    font-size: 14px;
-}
-.para{
-    font-size: 14px;
-    font-weight: bold;
-}
-.images{
-    width: 60px;
-    height:60px;
-    object-fit: cover;
-    border-radius: 100%;
-    margin-top: 10px;
-}
-.div-5{
-    position: fixed;
-    top: 15%;
-    right: 0;
-}
-.heading{
-    font-size: 18px;
-    font-weight: 700;
-}
-.list-one{
-    font-size: 18px;
-
-}
-.head{
-    font-size: 12px;
-}
-.image-one{
-    width: 60px;
-    height: 60px;
-    object-fit: fill; 
-    border-radius: 100%;
-    margin-top: -35px;
-    margin-left: 15px;
- }
- .special{
-    font-size: 16px;
- }
- .cad{
     font-size: 13px;
- }
- .image-two{
-    width: 30px;
-    object-fit: cover;
-    border-radius: 100%;
-    height: 30px;
- }
- .two-1{
-    margin-left: -15px;
- }
- .react{
-    display: flex;
- }
- @media screen and (max-width:1024px){
-    .icon,.icons{
-        padding-right: 20px;
-    }
-.img{
+    color: gray;
+}
+.head-1{
+    font-size: 13px;
     margin-top: -10px;
 }
-.div-5{
-    display: none;
+.sec-1{
+    font-weight: 500;
+    font-size: 14px;
 }
-    
- }
- @media  screen and (max-width:576px) {
+.heading{
+    font-size: 12px;
+    font-weight: 700;
+}
+.images{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.image-one{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+.para-2{
+    font-size: 14px;
+}
+.sec-2{
+    margin-top: -25px;
+}
+.list-1 a{
+    color: grey;
+    text-decoration: none;
+}
+.para-1{
+    font-size: 12px;
+}
+.list-one{
+    font-size: 16px;
+}
+.img-2{
+    width: 25px;
+     height: 25px;
+     border-radius: 100%;
+     object-fit: cover;
+}
+.page{
+    font-size: 12px;
+}
+.para-two{
+    font-size: 12px;
+    margin-top: -10px;
+}
 
+.div-5{
+    position: fixed;
+    top: 20%;
+    right: 0;
+}
+
+.list-one{
+    font-size: 16px;
+}
+.img-2{
+    width: 25px;
+     height: 25px;
+     border-radius: 100%;
+     object-fit: cover;
+}
+@media  screen and (max-width:900px) {
+    .sector{
+        margin-left: 295px;
+    }
+    .icons,.icon{
+        padding-right: 0px;
+        padding-left: 10px;
+    }
+    .list-1{
+        padding-left: 60px;
+    }
+    .para-1{
+        padding-left: 100px;
+    }
+}
+@media screen and (max-width:567px) {
     .nav-item .nav-link{
         display: none;
     }
-    .icons,.icon{
-        padding-left: 0px;
-    padding-right: 10px;
-    }
-    ul{
-        margin-right: 0px;
-    }
-    li{
-        padding-right: 0px;
-    }
-    
-    .div-5,.list{
-        display: none;
-    }
-    .try{
+    .nav-1{
         display: none;
     }
     .sec{
         width: 0px;
     }
-    .react{
+    .sector{
+        margin-left: 0px;
+    }
+    .sec-one{
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+    .sec-two{
+        margin-top: 10px;
+    }
+    .icon1{
+        right: 4%;
+        position: absolute;
+    }
+    .role{
         display: flex;
         justify-content: space-between;
     }
-    .pic{
-        display: flex;
-        justify-content: center;
+    .list-1{
+        padding-left: 50px;
     }
-
-    .h7{
-        font-size: 16px;
+    .li-1{
+        padding-left: 70px;
     }
-    .btn{
-        justify-content: center;
-        display: block;
+    .heading{
+        line-height: 30px;
+        font-size: 14px;
     }
-    .btn-one{
-        width: 50%;
+    .div-5{
+        display: none;
     }
+    
 }
+
+
