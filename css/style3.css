@@ -40,20 +40,12 @@ li a{
 .ic{
     font-size: 12px;
 }
-.para-one{
-    font-size: 14px;
-}
-.para-two{
-    font-size: 18px ;
-    font-weight: 700;
-    padding-top: 7px;
-}
-
-.para1{
-    padding-top: 7px;
+.head{
+    font-size: 13px;
 }
 .para2{
     font-size: 14px;
+    color: gray;
     font-weight: 500;
 }
 .span1{
@@ -63,48 +55,141 @@ li a{
 .text-primary{
     font-size: 15px;
 }
-.sec, .sec-1{
-    font-weight: 500;
-    font-size: 13px;
-}
-.head{
-    font-size: 12px;
-}
-.sec-one{
-    border-bottom: 1px solid rgb(88, 85, 85);
-}
-
 .image{
     width: 40px;
      height: 40px;
       object-fit: cover;
 }
-.sec-2{
-    border-radius: 7px;
-}
-.text-black{
-    font-size: 13px;
-}
 .list{
     font-size: 13px;
     color: gray;
 }
-.icon-1{
-    margin-top: -5px;
-    margin-left: -5px;
-    color: gray;
+.head-1{
+    font-size: 13px;
+    margin-top: -10px;
 }
-.div-5{
-    position: fixed;
-    top: 15%;
-    right: 0;
+.sec-1{
+    font-weight: 500;
+    font-size: 14px;
 }
 .heading{
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 700;
 }
-.list-one{
-    font-size: 18px;
-
+.images{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100%;
 }
+.image-one{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+.para-2{
+    font-size: 14px;
+}
+.sec-2{
+    margin-top: -25px;
+}
+.list-1 a{
+    color: grey;
+    text-decoration: none;
+}
+.para-1{
+    font-size: 12px;
+}
+.list-one{
+    font-size: 16px;
+}
+.img-2{
+    width: 25px;
+     height: 25px;
+     border-radius: 100%;
+     object-fit: cover;
+}
+.page{
+    font-size: 12px;
+}
+.para-two{
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.div-5{
+    position: fixed;
+    top: 20%;
+    right: 0;
+}
+
+.list-one{
+    font-size: 16px;
+}
+.img-2{
+    width: 25px;
+     height: 25px;
+     border-radius: 100%;
+     object-fit: cover;
+}
+@media  screen and (max-width:900px) {
+    .sector{
+        margin-left: 295px;
+    }
+    .icons,.icon{
+        padding-right: 0px;
+        padding-left: 10px;
+    }
+    .list-1{
+        padding-left: 60px;
+    }
+    .para-1{
+        padding-left: 100px;
+    }
+}
+@media screen and (max-width:567px) {
+    .nav-item .nav-link{
+        display: none;
+    }
+    .nav-1{
+        display: none;
+    }
+    .sec{
+        width: 0px;
+    }
+    .sector{
+        margin-left: 0px;
+    }
+    .sec-one{
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+    .sec-two{
+        margin-top: 10px;
+    }
+    .icon1{
+        right: 4%;
+        position: absolute;
+    }
+    .role{
+        display: flex;
+        justify-content: space-between;
+    }
+    .list-1{
+        padding-left: 50px;
+    }
+    .li-1{
+        padding-left: 70px;
+    }
+    .heading{
+        line-height: 30px;
+        font-size: 14px;
+    }
+    .div-5{
+        display: none;
+    }
+    
+}
+
 

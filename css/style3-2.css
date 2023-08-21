@@ -43,29 +43,6 @@ li a{
 .ic{
     font-size: 12px;
 }
-.para{
-    font-size: 13px;
-    margin-top: -6px;
-}
-.images{
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    border-radius: 100%;
-}
-.span-1{
-    font-weight:400;
-    color: gray;
-    font-size: 14px;
-}
-.para-two{
-    font-size: 13px;
-    margin-top: -5px;
-}
-.para-one{
-    font-size: 14px;
-    padding-right: 2px;
-}
 .image-one{
     width: 100px;
     height: 100px;
@@ -73,36 +50,6 @@ li a{
     border-radius: 100%;
     margin-left: 20px;
     margin-top: -80px;
-}
-
-.div-5{
-    position: fixed;
-    top: 15%;
-    right: 0;
-}
-.quality{
-    font-size: 14px;
-    font-weight: 600;
-}
-.button{
-    border-radius: 30px;
-}
-.para-3{
-    font-size: 14px;
-    color: blue;
-}
-.para-2{
-    font-size: 13px;
-}
-.page{
-    font-size: 12px;
-}
-.special-1,.para-4{
-    font-size: 13px;
-    font-weight: 500;
-}
-.cad{
-    font-size: 14px;
 }
 .icon-1{
     width: 30px;
@@ -116,29 +63,93 @@ li a{
     margin-top: 20px;
     margin-right: 10px;
 }
+.quality{
+    font-size: 14px;
+    font-weight: 600;
+}
+.para-3{
+    font-size: 14px;
+    color: blue;
+}
+.para-2{
+    font-size: 14px;
+    color: gray;
+}
+.images{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.image-two{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.button{
+    border-radius: 30px;
+}
+
+.page{
+    font-size: 13px;
+}
+.para-one{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.para{
+    font-size: 13px;
+    margin-top: -6px;
+}
+.page-1{
+    font-size: 15px;
+    color: gray;
+    font-weight: lighter;
+}
+.button-1{
+    border-radius: 30px;
+    margin-top: -15px;
+    width: 100%;
+}
+.cad{
+    font-size: 14px;
+}
+.img-1{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+
+}
+.para-two{
+    font-size: 13px;
+    margin-top: -5px;
+}
+
 .div-5{
     position: fixed;
     top: 20%;
     right: 0;
 }
-.list-one{
-    font-size: 18px;
 
+.list-one{
+    font-size: 16px;
 }
-.head{
-    font-size: 12px;
+.img-2{
+    width: 25px;
+     height: 25px;
+     border-radius: 100%;
+     object-fit: cover;
 }
-.sub{
-    display: flex;
-    justify-content: space-between;
-}
+
 @media  screen and (max-width:576px) {
     .nav-item .nav-link{
         display: none;
     }
     .icons,.icon{
         padding-left: 0px;
-        padding-right: 0px;
+        padding-right: 5px;
     
     }
     ul{
@@ -147,22 +158,28 @@ li a{
     li{
         padding-right: 10px;
     }
-    
-    .div-5,.list{
-        display: none;
-    }
-    .try{
+    .nav-1{
         display: none;
     }
     .sec{
         width: 0px;
     }
-    .context{
-        display: none;
+    .sub-text{
+        margin-bottom: 10px;
     }
     .sub{
         display: block;
     }
+    
+    
+    .div-5,.list{
+        display: none;
+    }
+   
+    .context{
+        display: none;
+    }
+   
     .title{
         margin-bottom: 20px;
     }
