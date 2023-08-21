@@ -1,0 +1,188 @@
+
+ul{
+    margin-right: 10px;
+}
+.sec{
+    outline: none;
+}
+li {
+    font-size: 13px;
+    font-weight: 500;
+    padding-right: 10px;
+}
+li a{
+    margin-top: -7px;
+}
+.icon{
+    padding-left: 10px;
+    font-size: 18px;
+    color: black;
+}
+.icons{
+    padding-left: 15px;
+    font-size: 18px;
+    color: black;
+}
+.img{
+    width: 20px ;
+    height: 20px;
+    object-fit: cover;
+   margin-left: 7px;
+}
+.li{
+    border-right: .5px solid black;
+}
+.li a{
+    margin-top: -10px;
+}
+    
+::placeholder{
+    font-size: 13px;
+
+}
+.ic{
+    font-size: 12px;
+}
+.para{
+    font-size: 13px;
+    margin-top: -6px;
+}
+.images{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.span-1{
+    font-weight:400;
+    color: gray;
+    font-size: 14px;
+}
+.para-two{
+    font-size: 13px;
+    margin-top: -5px;
+}
+.para-one{
+    font-size: 14px;
+    padding-right: 2px;
+}
+.image-one{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-left: 20px;
+    margin-top: -80px;
+}
+
+.div-5{
+    position: fixed;
+    top: 15%;
+    right: 0;
+}
+.quality{
+    font-size: 14px;
+    font-weight: 600;
+}
+.button{
+    border-radius: 30px;
+}
+.para-3{
+    font-size: 14px;
+    color: blue;
+}
+.para-2{
+    font-size: 13px;
+}
+.page{
+    font-size: 12px;
+}
+.special-1,.para-4{
+    font-size: 13px;
+    font-weight: 500;
+}
+.cad{
+    font-size: 14px;
+}
+.icon-1{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 0;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0; 
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.div-5{
+    position: fixed;
+    top: 20%;
+    right: 0;
+}
+.list-one{
+    font-size: 18px;
+
+}
+.head{
+    font-size: 12px;
+}
+.sub{
+    display: flex;
+    justify-content: space-between;
+}
+@media  screen and (max-width:576px) {
+    .nav-item .nav-link{
+        display: none;
+    }
+    .icons,.icon{
+        padding-left: 0px;
+        padding-right: 0px;
+    
+    }
+    ul{
+        margin-right: 0px;
+    }
+    li{
+        padding-right: 10px;
+    }
+    
+    .div-5,.list{
+        display: none;
+    }
+    .try{
+        display: none;
+    }
+    .sec{
+        width: 0px;
+    }
+    .context{
+        display: none;
+    }
+    .sub{
+        display: block;
+    }
+    .title{
+        margin-bottom: 20px;
+    }
+    .title,.title-1{
+        margin-right: 10px;
+    }
+    .empty{
+        display: none;
+    }
+    .section{
+        width: 93%;
+        margin-left: 12px;
+        margin-top: 10px;
+    }
+    .spec-row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .column{
+        display: flex;
+    }
+}
+

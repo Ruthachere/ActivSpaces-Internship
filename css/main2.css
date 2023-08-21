@@ -1,0 +1,15 @@
+body{
+    background-color: blue;
+}
+p,h1{
+    font-size: 20px;
+    color: aliceblue;
+
+}
+@media  (min-width:450px) {
+    p{
+        font-size:30px;
+        color: black;
+    }
+    
+}
