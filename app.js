@@ -1,12 +1,13 @@
-/*console.log(document.getElementById('form'));
+const form = document.querySelector('#form_control');
+form.addEventListener('submit' ,runEvent);
 
-const form = document.getElementById('form');
-//change styling
+const taskInput =document.querySelector('.task');
+taskInput.value ='';
+taskInput.addEventListener('keydown',runEvent);
 
-form.style.background ='yellow';
-form.innerHTML += '<form style="display:block;"><h1>Form Element</form>';
-console.log(document.querySelector('#form'));
-document.querySelector('li:last-child').style.color = 'red';*/
 
-const item =document.getElementsByClassName('collection-item')
-console.log(item);
+ function runEvent (e){
+console.log(`EVENT TYPE: &{e.type}`);
+ console.log(taskInput.value);
+ e.preventDefault();
+}
