@@ -1,0 +1,47 @@
+.body{
+        background: linear-gradient(135deg, rgba(178, 6, 178, 0.861),rgba(247, 10, 53, 0.759),rgba(251, 115, 4, 0.87));
+        animation:color 12s ease-in-out ;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-size: cover;
+    }
+textarea{
+    width: 100%;
+    height: 150px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid red;
+    
+    
+}
+.task{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 5px;
+}
+input[type="date"]{
+    width: 45%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+input[type="time"]{
+    width: 45%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    
+}
+.btn{
+    background: linear-gradient(135deg, rgba(178, 6, 178, 0.66),rgba(247, 10, 53, 0.759),rgba(251, 115, 4, 0.78));
+    text-align: center;
+    width: 100%;
+    outline: none;
+    
+}
