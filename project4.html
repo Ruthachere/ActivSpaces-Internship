@@ -17,15 +17,16 @@
 <input type="text" name="text" placeholder="Task Name" class="task mt-4">
 <textarea name="description" id="description" cols="30" rows="10" placeholder="Enter task Description" class="text my-4"></textarea>
 <div class="col-12 d-flex border-bottom" style="justify-content: space-between;">
-    <input type="date" name="Date" class="date mb-4">
-    <input type="time" name="time" class="time mb-4">
+    <input type="date" name="Date" class="date mb-4" id="tasks">
+    <input type="time" name="time" class="time mb-4" id="tasks">
 </div>
 <div class="col-5 p-3 m-auto">
     <button class="btn btn-1 border border-dark">Submit</button>
 </div>
 </form>
+
 <div class="col-12 mt-4">
-    <form action="" class="form-control">
+    <div class="form-control" id="todo">
         <h2>Tasks</h2>
         <div class="col-lg-11 col-md-10 ms-5 ps-5 my-5" style="display: flex; justify-content: space-evenly;">
             <input type="date" class="date-1">
@@ -37,7 +38,7 @@
         <button class="btn btn-2 border border-dark">Delete</button>
         <button class="btn btn-2 border border-dark">Edit</button>
         </div>
-    </form>
+    </div>
 </div>
 </div>
 
