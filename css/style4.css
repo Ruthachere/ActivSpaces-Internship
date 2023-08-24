@@ -1,10 +1,10 @@
 .body{
-        background: linear-gradient(135deg, rgba(178, 6, 178, 0.861),rgba(247, 10, 53, 0.759),rgba(251, 115, 4, 0.87));
+        background: linear-gradient(135deg, rgba(178, 6, 178, 0.919),rgba(247, 10, 53, 0.672),rgba(251, 115, 4, 0.697));
         animation:color 12s ease-in-out ;
         width: 100%;
         background-position: center;
         background-repeat: no-repeat;
-        height: 100vh;
+        height: 100%;
         background-size: cover;
     }
     h2{
@@ -41,10 +41,26 @@ input[type="time"]{
     border-bottom: 2px solid black;
     
 }
-.btn{
-    background: linear-gradient(135deg, rgba(178, 6, 178, 0.66),rgba(247, 10, 53, 0.759),rgba(251, 115, 4, 0.78));
+.btn-1{
+    
     text-align: center;
     width: 100%;
     outline: none;
     
+}
+.btn-2{
+    text-align: center;
+    width: 40%;
+}
+.btn{
+    background: linear-gradient(135deg, rgba(178, 6, 178, 0.66),rgba(247, 10, 53, 0.759),rgba(251, 115, 4, 0.78));
+}
+#task_description{
+    height: 100px;
+}
+#task{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid purple;
+    outline: none;
 }
