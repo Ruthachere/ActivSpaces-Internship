@@ -1,5 +1,5 @@
 .body{
-        background: linear-gradient(135deg, rgba(178, 6, 178, 0.919),rgba(247, 10, 53, 0.672),rgba(251, 115, 4, 0.697));
+        background: linear-gradient(135deg, rgba(178, 6, 178, 0.981),rgba(247, 10, 53, 0.672),rgba(251, 115, 4, 0.697));
         animation:color 12s ease-in-out ;
         width: 100%;
         background-position: center;
@@ -42,25 +42,11 @@ input[type="time"]{
     
 }
 .btn-1{
-    
-    text-align: center;
-    width: 100%;
-    outline: none;
-    
-}
-.btn-2{
-    text-align: center;
-    width: 40%;
-}
-.btn{
     background: linear-gradient(135deg, rgba(178, 6, 178, 0.66),rgba(247, 10, 53, 0.759),rgba(251, 115, 4, 0.78));
-}
-#task_description{
-    height: 100px;
-}
-#task-one{
+    text-align: center;
     width: 100%;
-    border: none;
-    border-bottom: 2px solid purple;
     outline: none;
+    
 }
+
+
