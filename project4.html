@@ -12,36 +12,24 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-6 m-auto h-100" id="form_control">
-<form action="" class="form-control">
+<form action="" class="form-control add">
     <h2>Create a Task</h2>
-<input type="text" name="text" placeholder="Task Name" class="task mt-4" id="tasks">
+<input type="text" name="add" placeholder="Task Name" class="task mt-4" id="names">
 <textarea name="description" id="description" cols="30" rows="10" placeholder="Enter task Description" class="text my-4"></textarea>
 <div class="col-12 d-flex border-bottom" style="justify-content: space-between;">
-    <input type="date" name="Date" class="date mb-4" id="task">
-    <input type="time" name="time" class="time mb-4" id="task-1">
+    <input type="date" name="Date" class="date mb-4" id="date">
+    <input type="time" name="time" class="time mb-4" id="time">
 </div>
 <div class="col-5 p-3 m-auto">
-    <button class="btn btn-1 border border-dark">Submit</button>
+    <button  class="btn btn-1 border border-dark">Submit</button>
 </div>
 </form>
 
-<div class="col-12 mt-4">
-    <div class="form-control" id="todo">
+<div class="col-12 mt-5 mb-5">
+    <div class="form-control">
         <h2>Tasks</h2>
-        </div>
-        <div class="div bg-white">
-              <div class="col">
-           <label for="Date">Date</label>
-                <label for="Time">Time</label>
-        </div>
-        <div class="col-12">
-            <h6>Task</h6>
-            <h6>Task Description</h6>
-            <hr>
-        <div class="col-12  p-3" style="display:flexbox-end;">
-            </div>
-            <button class="btn btn-2 border border-dark" id="btn-2">Delete</button>
-            <button class="btn btn-2 border border-dark">Edit</button>
+        <div class="col" id="todo_wrapper"></div>
+    </div>
     </div>
 </div>
 </div>
