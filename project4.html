@@ -12,19 +12,24 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-6 m-auto h-100" id="form_control">
+            <!--creating the form-->
 <form action="" class="form-control add">
     <h2>Create a Task</h2>
+    <!--input containing task name-->
 <input type="text" name="add" placeholder="Task Name" class="task mt-4" id="names">
+<!--text area for messages-->
 <textarea name="description" id="description" cols="30" rows="10" placeholder="Enter task Description" class="text my-4"></textarea>
 <div class="col-12 d-flex border-bottom" style="justify-content: space-between;">
+    <!--input containing date and time-->
     <input type="date" name="Date" class="date mb-4" id="date">
     <input type="time" name="time" class="time mb-4" id="time">
 </div>
+<!--button for th submit-->
 <div class="col-5 p-3 m-auto">
     <button  class="btn btn-1 border border-dark">Submit</button>
 </div>
 </form>
-
+<!--creating the  todo container-->
 <div class="col-12 mt-5 mb-5">
     <div class="form-control">
         <h2>Tasks</h2>
