@@ -6,7 +6,7 @@ var wrapper = document.getElementById('todo_wrapper');
 const generateTemplate = (todo) =>{
 
     var html =  `<div class="col bg-white border">
-    <div class="col-10 d-flex " style="justify-content: end;">
+    <div class="col-lg-10 col-md-12 d-flex " style="justify-content: end;">
     <p class="me-5">Date:${todo.date}</p>
     <p>Time:${todo.time}</label></p>
     </div>
@@ -23,7 +23,7 @@ const generateTemplate = (todo) =>{
     wrapper.innerHTML += html;
     
 };
-//creating the objects fot the innerHtml
+//creating the objects for the innerHtml
 form.addEventListener('submit', e => {
     e.preventDefault();
     let taskInput = form.names.value.trim();
@@ -40,21 +40,30 @@ form.addEventListener('submit', e => {
     });
     form.reset();
 });
- // Event listener to edit or delete a todo
- wrapper.addEventListener('click', (event) => {
-    if (event.target.classList.contains('edit-btn')) {
-        const index = event.target.getAttribute('data-index');
+
+ // Event listener to edit amd delete the todo
+ wrapper.addEventListener('click', (e) => {
+    if (e.target.classList.contains('edit-btn')) {
+        const index = e.target.getAttribute('data-index');
         const updatedTodo = prompt('Edit todo:', wrapper[index]);
         if (updatedTodo !== null) {
             wrapper[index] = updatedTodo;
-            //saveTodosToLocalStorage();
+        //    saveTodosToLocalStorage();
         }
-    } else if (event.target.classList.contains('delete-btn')) {
-        const index = event.target.getAttribute('data-index');
-        wrapper.splice(index, 1);
-       // saveTodosToLocalStorage();
+    } else if (e.target.classList.contains('delete-btn')) {
+        const index = e.target.getAttribute('data-index');
+        wrapper.firstElementChild.remove(index, 0);
+    //    saveTodosToLocalStorage();
     }
 });
+   // Retrieve todos from local storage or initialize an empty array
+   let todos = JSON.parse(localStorage.getItem('todo_wrapper')) || [];
+
+ // Function to save todos to local storage
+ function saveTodosToLocalStorage() {
+    localStorage.setItem('todo_wrapper', JSON.stringify(todos));
+    updateTodoList();
+}
 
 
 
