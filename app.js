@@ -12,11 +12,11 @@ const generateTemplate = (todo) =>{
     </div>
     <div class="col-12">
     <h6>Task:${todo.taskInput}</h6>
-    <h6>Task Description:${todo.description}</h6>
+    <p>Task Description:${todo.description}</p>
     <hr>
-    <div class="col-12 d-flex"  style="justify-content: end;">
-    <button class="btn btn-2 border border-dark" id="btn-2">Delete</button>
-    <button class="btn btn-2 border border-dark">Edit</button>
+    <div class="col-lg-12 col-md-9 d-flex"  style="justify-content: end;">
+    <button class="btn border edit-btn" data-index="index">Edit</button>
+    <button class="btn border delete-btn" data-index="index">Delete</button>
     </div>
     </div>
     </div>`;
@@ -40,45 +40,27 @@ form.addEventListener('submit', e => {
     });
     form.reset();
 });
-// const clearBtn = document.querySelector('#names');
-// clearBtn.addEventListener('click',clearTasks);
-// function clearTasks() {
-//     while(clearBtn.firstChild){
-//        clearBtn.removeChild(clearBtn.firstChild);
-//     }
-//   }
+ // Event listener to edit or delete a todo
+ wrapper.addEventListener('click', (event) => {
+    if (event.target.classList.contains('edit-btn')) {
+        const index = event.target.getAttribute('data-index');
+        const updatedTodo = prompt('Edit todo:', wrapper[index]);
+        if (updatedTodo !== null) {
+            wrapper[index] = updatedTodo;
+            //saveTodosToLocalStorage();
+        }
+    } else if (event.target.classList.contains('delete-btn')) {
+        const index = event.target.getAttribute('data-index');
+        wrapper.splice(index, 1);
+       // saveTodosToLocalStorage();
+    }
+});
 
 
 
 
 
-// var toDo = document.getElementById('todo');
-// toDo.innerHTML += `<div class="col bg-white border">
-// <div class="col-10 d-flex " style="justify-content: end;">
-// <p class="me-5">Date:${dates}</p>
-// <p>Time:${times}</label></p>
-// </div>
-// <div class="col-12">
-// <h6>Task${taskInput}</h6>
-// <h6>Task Description${desc}</h6>
-// <hr>
-// <div class="col-12 d-flex"  style="justify-content: end;">
-// <button class="btn btn-2 border border-dark" id="btn-2">Delete</button>
-// <button class="btn btn-2 border border-dark">Edit</button>
-// </div>
-// </div>
-// </div>`;
 
-// form.addEventListener('click', addTask); 
-// function addTask(e) {
-//     todo = form.value;
-//     console.log(todo);
-//     // if (taskInput.value === '' ) {
-//     //     alert('Add a task'); 
-//        // }
-//      taskInput.value = '';
-//     e.preventDefault();   
-// }
 
 
 
