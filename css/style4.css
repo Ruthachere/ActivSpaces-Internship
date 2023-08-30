@@ -50,5 +50,45 @@ input[type="time"]{
     outline: none;
     
 }
+.task_1 {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.task-wrapper h2 {
+    margin-top: 0;
+    color: white;
+}
+
+.date-wrapper {
+    font-size: 16px;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+
+.task-title {
+    margin: 0;
+    width: 70%;
+    font-size: 16px;
+}
+
+.task-desc {
+    font-size: 14px;
+}
+
+.task-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.task-footer>button:first-child {
+    margin-right: 5px;
+}
 
 

@@ -11,21 +11,22 @@
 <body class="body">
 <div class="container mt-5">
     <div class="row">
-        <div class="col-lg-6 col-md-9 m-auto h-100" id="form_control">
+        <div class="col-lg-6 col-md-9 m-auto">
             <!--creating the form-->
-<form action="" class="form-control add py-5">
+<form action="" class="form-control py-5 m-" id="task-form">
     <h2>Create a Task</h2>
     <!--input containing task name-->
-<input type="text" name="add" placeholder="Task Name" class="task mt-4" id="names">
+<input type="text" name="task_name" placeholder="Task Name" class="task mt-4" id="names">
 <!--text area for messages-->
-<textarea name="description" id="description" cols="20" rows="5" placeholder="Enter task Description" class="text my-4"></textarea>
+<textarea name="desccription" id="description" cols="20" rows="5" placeholder="Enter task Description" class="text my-4"></textarea>
 <div class="col-12 d-flex border-bottom" style="justify-content: space-between;">
     <!--input containing date and time-->
-    <input type="date" name="Date" class="date mb-4" id="date">
-    <input type="time" name="time" class="time mb-4" id="time">
+    <input type="date" name="date" class="date mb-4">
+    <input type="time" name="time" class="time mb-4">
 </div>
 <!--button for th submit-->
 <div class="col-5 p-3 mt-3 m-auto">
+    <input type="hidden" name="task_id" id="task_id">
     <button  class="btn btn-1 border border-dark">Submit</button>
 </div>
 </form>
@@ -33,7 +34,7 @@
 <div class="col-12 mt-5 mb-5">
     <div class="form-control">
         <h2>Tasks</h2>
-        <div class="col" id="todo_wrapper"></div>
+        <div class="col" id="tasks"></div>
     </div>
     </div>
 </div>
@@ -41,8 +42,6 @@
 
     </div>
 </div>
-
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
