@@ -17,17 +17,22 @@
     <h2>Create a Task</h2>
     <!--input containing task name-->
 <input type="text" name="task_name" placeholder="Task Name" class="task mt-4" id="names">
+<div id="div1"></div><br>
 <!--text area for messages-->
 <textarea name="desccription" id="description" cols="20" rows="5" placeholder="Enter task Description" class="text my-4"></textarea>
+<div id="div2"></div><br>
 <div class="col-12 d-flex border-bottom" style="justify-content: space-between;">
     <!--input containing date and time-->
     <input type="date" name="date" class="date mb-4">
+    <div id="div3"></div><br>
     <input type="time" name="time" class="time mb-4">
+    <div id="div4"></div><br>
 </div>
 <!--button for th submit-->
+
 <div class="col-5 p-3 mt-3 m-auto">
     <input type="hidden" name="task_id" id="task_id">
-    <button  class="btn btn-1 border border-dark">Submit</button>
+    <button  class="btn btn-1 border border-dark"> Submit</button>
 </div>
 </form>
 <!--creating the  todo container-->
