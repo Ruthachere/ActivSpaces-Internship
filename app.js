@@ -36,10 +36,10 @@ form.addEventListener("submit", function (e) {
     // 1-prevent default form submission
     e.preventDefault();
     // get form values
-    const taskName = form.task_name.value;
-    const taskDesc = form.desccription.value;
-    const date = form.date.value;
-    const time = form.time.value;
+    const taskName = form.task_name.value.trim();
+    const taskDesc = form.desccription.value.trim();
+    const date = form.date.value.trim();
+    const time = form.time.value.trim();
     const taskId = form.task_id.value;
     
     // add object to list of tasks
