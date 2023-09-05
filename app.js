@@ -11,6 +11,7 @@ function displayTasks(listOfTasks) { // listOfTasks = tasks
     //loop through task to create html content
     for (let i = 0; i < listOfTasks.length; i++) {
         let html = `<div class="task_1">
+        <p class ="priority">${listOfTasks[i].number}</p>
         <div class="task-header">
             <h5 class="task-title m-0">${listOfTasks[i].taskName}</h5>
             <div class="date-wrapper">
@@ -30,68 +31,101 @@ function displayTasks(listOfTasks) { // listOfTasks = tasks
     }
     
 }
+function addErrorElement(inputElement,errorMessage) {
+    let errorEle = inputElement.parentElement.querySelector(".error");
+    if (!errorEle) {
+     errorEle = document.createElement("p");
+     errorEle.setAttribute("class","error");
+     inputElement.parentElement.appendChild(errorEle);  
+    }
+   errorEle.textContent = errorMessage;
+}
+
+function removeErrorElement(inputElement) {
+    let errorEle = inputElement.parentElement.querySelector('.error');
+    if (errorEle) {
+        errorEle.remove();
+   }
+}
 
 //eventlistener for the submit button
 form.addEventListener("submit", function (e) {
     // 1-prevent default form submission
     e.preventDefault();
     // get form values
-    const taskName = form.task_name.value.trim();
-    const taskDesc = form.desccription.value.trim();
-    const date = form.date.value.trim();
-    const time = form.time.value.trim();
+    const taskName = form.task_name;
+    const taskDesc = form.desccription;
+    const date = form.date;
+    const time = form.time;
+    const number = form.number;
     const taskId = form.task_id.value;
     
     // add object to list of tasks
-    
-    
-    let hasError = false;
+
+     let hasError = false;
     // validation for form
     //validation for the task name
-    if (taskName == "") {
-        document.getElementById('div1').innerHTML ="Please fill out the task name ";
-        hasError = true;
-    } 
-    //else if
-    else{
-        document.getElementById('div1').innerHTML = "";
+    if (taskName.value.trim() == "") {
+     addErrorElement(taskName, "This is required");
+     hasError = true;
+        // document.getElementById('div1').innerHTML ="Please fill";
+    } else{
+        //document.getElementById('div1').innerHTML ="";
+       removeErrorElement(taskName);
     }
-    //validation of the task Description
-    if (taskDesc == "") {
-        document.getElementById('div2').innerHTML ="Please fill out the task description ";
+//     //validation of the task Description
+    if (taskDesc.value.trim() == "") {
+        addErrorElement(taskDesc, "This is required");
         hasError = true;
+    //document.getElementById('div2').innerHTML ="Please fill";
     } 
     //else if
     else{
-        document.getElementById('div2').innerHTML ="";
+       //document.getElementById('div2').innerHTML ="";
+       removeErrorElement(taskDesc);
     }
 //validation of the date
-    if (date == "") {
-        document.getElementById('div3').innerHTML ="Please fill";
+    if (date.value.trim()  == "") {
+        addErrorElement(date, "Required");
+       // document.getElementById('div3').innerHTML ="Please fill";
         hasError = true;
     } 
     //else if
     else{
-        document.getElementById('div3').innerHTML ="";
+        removeErrorElement(date);
+        //document.getElementById('div3').innerHTML ="";
     }
     //validation of time
-    if (time == "") {
-        document.getElementById('div4').innerHTML ="Please fill";
+    if (time.value.trim()  == "") {
+        addErrorElement(time, "Required");
+       // document.getElementById('div4').innerHTML ="Please fill";
         hasError = true;
     } 
     //else if
     else{
-        document.getElementById('div4').innerHTML ="";
+      //  document.getElementById('div4').innerHTML ="";
+      removeErrorElement(time);
+    }
+    if (number.value.trim()  == "") {
+        addErrorElement(number, "This is required");
+       // document.getElementById('div4').innerHTML ="Please fill";
+        hasError = true;
+    } 
+    //else if
+    else{
+      //  document.getElementById('div4').innerHTML ="";
+      removeErrorElement(number);
     }
     if (hasError) {
         return;
     }
     //create an object of task with a unique 
     const task = {
-        taskName: taskName,
-        taskDesc: taskDesc,
-        date: date,
-        time: time
+        taskName: taskName.value,
+        taskDesc: taskDesc.value,
+        number:number.value,
+        date: date.value,
+        time: time.value
     }
     //condition for the edit
     if (taskId) {
@@ -99,11 +133,14 @@ form.addEventListener("submit", function (e) {
         
     } else {
         tasks.push(task);
+        tasks.sort((a,b) => a.number - b.number);
     }
     
     form.reset();
+    
     // call a function to dsiplay task
    displayTasks(tasks); 
+
     let array = JSON.stringify(tasks);
     localStorage.setItem('task', array);
 });
@@ -130,6 +167,7 @@ function editTodo(i){
     const todo = tasks[i];
     form.task_name.value = todo.taskName;
     form.desccription.value = todo.taskDesc;
+    form.number.value = todo.number;
      form.date.value = todo.date;
    form.time.value = todo.time;
    form.task_id.value = i;

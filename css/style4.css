@@ -21,7 +21,7 @@ textarea,.text{
     border: none;
     border-bottom: 2px solid black;  
 }
-.task{
+.task, .number{
     width: 100%;
     outline: none;
     border: none;
@@ -89,6 +89,9 @@ input[type="time"]{
 
 .task-footer>button:first-child {
     margin-right: 5px;
+}
+#div3,#div4{
+    display: contents;
 }
 
 
