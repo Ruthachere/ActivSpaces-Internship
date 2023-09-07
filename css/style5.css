@@ -93,6 +93,12 @@ font-size: 30px;
     background-color: rgba(50, 47, 47, 0.861);
     color: white;
 }
+.fa-arrow-down{
+    position: absolute;
+    right: 13%;
+    margin-top: -40px;
+    font-size: 30px;
+}
 @media  screen and (max-width:576px) {
     .sector{
         display: block;

@@ -31,6 +31,7 @@ function displayTasks(listOfTasks) { // listOfTasks = tasks
     }
     
 }
+//function to add error message
 function addErrorElement(inputElement,errorMessage) {
     let errorEle = inputElement.parentElement.querySelector(".error");
     if (!errorEle) {
@@ -40,7 +41,7 @@ function addErrorElement(inputElement,errorMessage) {
     }
    errorEle.textContent = errorMessage;
 }
-
+//function to remove error message
 function removeErrorElement(inputElement) {
     let errorEle = inputElement.parentElement.querySelector('.error');
     if (errorEle) {
@@ -172,3 +173,29 @@ function editTodo(i){
    form.time.value = todo.time;
    form.task_id.value = i;
 }
+// let hasError = false;
+    // if (name.value.trim() == "") {
+    //     addErrorElement(name, "This is required");
+    //     hasError = true;
+    //    } else{
+
+    //       removeErrorElement(name);
+    //    }
+    //    //validation of the task Description
+    //    if (email.value.trim() == "") {
+    //        addErrorElement(email, "This is required");
+    //        hasError = true;
+    //    }else{
+
+    //       removeErrorElement(email);
+    //    }
+    //    if (message.value.trim() == "") {
+    //     addErrorElement(message, "This is required");
+    //     hasError = true;
+    // }  else{
+       
+    //    removeErrorElement(message);
+    // }
+    // if (hasError) {
+    //     return;
+    // }
