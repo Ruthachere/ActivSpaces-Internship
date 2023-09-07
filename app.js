@@ -158,7 +158,7 @@ displayTasks(tasks);
 //function to delete todo
 function deleteTodo(i) {
     tasks.splice(i, 1);
-   // localStorage.setItem('task',JSON.stringify(tasks));
+   localStorage.setItem('task',JSON.stringify(tasks));
     displayTasks(tasks);
 }
 
