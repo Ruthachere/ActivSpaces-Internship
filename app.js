@@ -22,7 +22,7 @@ function displayTasks(listOfTasks) { // listOfTasks = tasks
         <p class="task-desc">${listOfTasks[i].taskDesc}</p>
         <hr>
         <div class="task-footer actions ">
-            <button  onclick="editTodo(${i})"><i></i>Edit</button>
+            <button  onclick="editTodo(${i})">Edit</button>
             <button onclick="deleteTodo(${i})">Delete</button>
         </div>
     </div>`;
@@ -157,7 +157,7 @@ displayTasks(tasks);
 //function to delete todo
 function deleteTodo(i) {
     tasks.splice(i, 1);
-    localStorage.setItem('task',JSON.stringify(tasks));
+   // localStorage.setItem('task',JSON.stringify(tasks));
     displayTasks(tasks);
 }
 
