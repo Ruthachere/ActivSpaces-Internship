@@ -1,0 +1,199 @@
+.carousel-item{
+    height:32rem;
+    background: #000;
+    color: white;
+    position: relative;
+}
+.containerone{
+    position: absolute;
+    text-align: center;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    width: 75%;
+}
+.containertwo{
+    position: absolute;
+    text-align: center;
+    bottom: 40%;
+    left: 0;
+    right: 0;
+    width: 75%; 
+}
+.bg {
+
+background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).webp");
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+opacity: 0.5;
+}
+.bg1{
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).webp");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    }
+.image_one{
+    width: 100%; 
+    height: 430px; 
+    object-fit: cover;
+    object-position: center;
+}
+.context{
+    line-height: 1.7;
+}
+.content{
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: rgb(120, 31, 31);
+}   
+#btn-1{
+    float: right;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 100px;   
+    width: 18%;
+    margin-right: 55px;
+}
+.btn1{
+    float: right;
+    width: 18%;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+.image-two{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.list a{
+  font-size: 25px;
+}
+.li{
+    font-size: 20px;
+  font-weight: 600;
+}
+.li a{
+    color:  rgb(120, 31, 31); 
+}
+.logo{
+font-family: 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+font-size: 30px;
+}
+.cards1, .cards{
+    background-color: rgba(50, 47, 47, 0.861);
+    color: white;
+}
+/* .fa-arrow-down{
+    position: absolute;
+    right: 13%;
+    margin-top: -40px;
+    font-size: 30px;
+} */
+.button  {
+    right: 13%;
+    margin-top: -60px;
+    font-size: 30px;
+    color: red;
+    position: absolute;
+    /* height: 30px;
+    width: 30px;
+    margin: 24px 0 0 -130px; */
+    animation: updown 2s ease infinite;
+}
+.card{
+    height: 100%;
+}
+.card-body{
+    padding-top: 30px;
+    padding-bottom: 0px;
+    
+}
+.para{
+    color: rgb(30, 25, 25);
+    font-size: 50px;
+    padding-top: 30px;
+    font-weight: 500;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@media  screen and (max-width:576px) {
+    .sector{
+        display: block;
+    }
+    /* .cards1{
+        display: flex;
+        justify-content: space-between;
+    } */
+    #btn-1{
+        width: 50%;
+        font-size: 18px;
+    }
+    .btn1{
+        width: 90%;  
+    }
+    .containertwo{
+        bottom: 20%;
+    }
+    .card-text{
+        font-size: 19px;
+    }
+    .li{
+        font-size: 19px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .head3{
+        text-align: center;
+        padding-top: 10px;
+    }
+    .column1{
+        margin-top: 58px;
+    }
+    .button  {
+        right: 50%;
+        margin-top: -0.5px;
+        
+    }
+    #btn-1{
+        width: 76%;
+    }
+    .nav-bar{
+        text-align: center;
+        vertical-align: middle;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+        padding-right: 15px;
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+}
