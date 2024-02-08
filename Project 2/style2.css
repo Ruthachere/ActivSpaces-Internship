@@ -1,0 +1,633 @@
+body{
+  margin: auto;
+  box-sizing: border-box;
+}
+/*styling the background of the navbar*/
+.nav{
+  height: 80vh;
+  background-image:url('https://cybereasylearning.com/wp-content/uploads/2018/04/security-guard.jpg') ;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+}
+/*styling the navigation bar*/
+.navbar{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+li{
+  display: inline-block;
+  list-style-type: none;
+}
+li a{
+  text-decoration: none;
+  padding-left: 30px;
+  font-size: 13px;
+ color: rgb(188, 186, 186);
+}
+li a:hover{
+  cursor: pointer;
+  color: black;
+}
+.nav1 a{
+  font-weight: 400;
+  color: white;
+}
+/*styling the logo*/
+.logo a{
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding-left: 50px;
+}
+.call a{
+  padding-right: 50px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+em{
+  color: white;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+/* styling the first section under the navbar*/
+.section{
+  color: white;
+  grid-template-columns: 50% 50%;
+  padding: 20px;
+  display: grid;
+}
+
+h1{
+  font-size: 55px;
+}
+.icon{
+  background-color: red;
+  width: 20px;
+ padding: 10px;
+ border-radius: 20px;
+}
+.para-one{
+  padding-bottom: 50px;
+}
+
+b{
+  font-size: 28px;
+}
+/*stlying the first grid container*/
+.container-one{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.grid1{
+  background-color: azure;
+  padding-left: 50px;
+  padding-top: 35px;
+
+}
+
+h2{
+  font-size: 35px;
+  font-family:sans-serif;
+}
+.para-two{
+  font-size: 16px;
+
+}
+/*styling the clickable button*/
+.btn {
+  border: hidden;
+ background-color: azure;
+ 
+}
+.btn a{
+ color: red;
+ text-decoration: none;
+}
+.btn a:hover{
+ cursor: pointer;
+ transition: 2s ease-in-out;
+}
+/*styling the second grid container*/
+.grid2{
+  background-color: red;
+
+}
+.head-two{
+  padding-left:95px ;
+  padding-top: 50px;
+  color: white;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto ;
+  padding: 10px 10px 5px 10px;
+}
+
+.grid-item {
+  padding: 10px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+}
+.head{
+  font-size: 55px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  
+}
+.para1{
+  margin-top: -40px;
+  font-size: 15px;
+}
+/*styling for section two*/
+.container-two{
+  background-color: white;
+  text-align: center;
+
+}
+.para-three{
+  text-align: left;
+  color: rgb(165, 159, 159);
+  font-size: 16px;
+}
+.grid-container2{
+  display: grid;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 40px;
+  grid-template-columns: 31% 31% 31%;
+  grid-gap: 30px 30px;
+  
+}
+.grid-item2 {
+  font-size: 12px;
+}
+.image-one{
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+.head-three{
+      font-size: 30px;
+      text-align: center;
+     font-weight: 600;
+     padding-top: 50px;
+     margin-bottom:-24px ;
+}
+.para2{
+  text-align: center;
+  padding-top: 40px;
+}
+h4{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+.btn-one{
+  color: red;
+  border: 1px solid red;
+  margin-bottom: 60px;
+  padding: 5px;
+  background-color: white;
+
+}
+/*styling of the third section*/
+.container-three{
+  background-image: url('https://th.bing.com/th/id/R.5f2d4d7d4bf291e9e603ed0ed8c823a9?rik=mssLLURRD2dK3A&pid=ImgRaw&r=0');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin: 0;
+  height: 80%;
+  opacity: 0.8;
+}
+.content{
+  text-align: center;
+  padding-top: 60px;
+  color: white;
+}
+.grid3{
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  padding: 10px 60px 0px 60px;
+}
+.grid-three{
+  padding: 20px;
+  text-align: center;
+  border: 2px solid white;
+  border-bottom: hidden;
+}
+.head-four{
+  font-size: 36px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-bottom: 10px;
+}
+#icon{
+  font-size: 32px;
+  color: red;
+  padding-top: 10px;
+}
+/* .head-five{
+  font-weight: 700;
+} */
+/*styling of the fourth section*/
+.container-four{
+  background-color:white;
+  width: 100%;
+
+}
+.content-three{
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 90px;
+}
+.btn-two{
+  color: red;
+  border: none;
+  background-color: white;
+}
+.head5{
+  font-size: 35px;
+  font-weight: 800;
+  font-family: Times, serif;
+}
+blockquote{
+  font-size: 15px;
+  flex-wrap: wrap;
+}
+.image-test{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-left: 40px;
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 50px;
+}
+cite{
+  display: inline-block;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
+/*styling of grid*/
+.grid-container3{
+ background-color: white;
+
+}
+.grid4{
+  display: grid;
+  grid-template-columns: 50% 40% 10%;
+  padding-top: 60px; 
+}
+.grid-four{
+  padding: 10px;
+}
+#primary-grid{
+  padding: 40px 80px 40px 80px;
+  border-bottom:none;
+  border-left: none;
+  background-color: rgba(244, 251, 252, 0.762);
+
+}
+.para5, .para6{
+  color: gray;
+  flex-wrap: wrap;
+  line-height: 1.5;
+}
+span{
+  flex-wrap: wrap;
+  line-height: 1.5;
+}
+#icon1{
+  color: red;
+}
+#tertiary-grid{
+  background-color:rgba(244, 251, 252, 0.762) ;
+  border: 1px solid rgba(244, 251, 252, 0.762);
+  border-right: none;
+  border-bottom:none ;
+}
+#secondary-grid{
+  padding: 50px 50px 0px 100px;
+
+}
+input,textarea{
+  background: rgba(244, 252, 254, 0.762);
+  border: 1px solid gray;
+  margin: 8px 0;
+  width: 85%;
+  display: block;
+}
+input{
+  padding:10px;
+}
+textarea{
+  background-color:rgba(244, 251, 252, 0.762);
+  height: 50px;
+  width: 87%;
+  padding-left: 9px;
+  color: gray;
+  padding-top: 10px;
+}
+.btn-three{
+  color: red;
+  border: 2px solid red;
+  background-color: white;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px;
+  margin-top: 5px;
+}
+/*styling of the last section or footer*/
+.grid-container4{
+  background-color: rgba(15, 12, 12, 0.89);
+  height: 100%;
+  color: white;
+  width: 100%;
+}
+.grid-five{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.grid5{
+   border-bottom: 1px solid white;
+   padding-right: 20px;
+   padding: 30px;
+}
+.head1{
+  padding-left: 28px;
+}
+.nav-cta{
+  display: block;
+  font-size: 16px;
+}
+.nav-cta a{
+  color: white;
+  font-size: 15px;
+  padding-top: 15px;
+}
+.nav-cta a:hover{
+  background-color:none;
+  cursor: pointer;
+}
+.para-four{
+  font-size: 15px;
+}
+
+.icon2{
+  padding-left: 20px;
+}
+@media  screen and (max-width:1191px) {
+
+  .nav{ 
+    background-blend-mode: darken;
+    height: 50vh;
+  }
+  li a{
+    color: ghostwhite;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px;
+  }
+ .nav1 a{
+  color: ghostwhite;
+  font-size:13px ;
+  font-weight: 600;
+ }
+ .logo a{
+  color: rgb(100, 159, 210);
+  font-size: 15px;
+ }
+ .call a{
+  padding-right: 40px;
+  font-family:sans-serif;
+ }
+ .section{
+  grid-template-columns: 50% 50%;
+  padding-top: 30px;
+
+ }
+ /*section under navbar*/
+.head-one{
+  padding-top: 10px;
+}
+ h1{
+   font-size: 35px;
+ }
+ b{
+  font-size: 17px;
+ }
+ .para-one{
+  font-size: 13px;
+ }
+ .para1{
+  margin-top: -40px;
+ }
+ h4{
+  font-size: 20px;
+ }
+   .grid1{
+    padding: 20px 30px 0px 20px;
+    font-size: 10px;
+   }
+   h2{
+    font-size: 15px;
+    padding-top: 10px;
+   }
+   .para-two{
+    font-size: 15px;
+   }
+   .btn{
+    margin-top: 10px;
+   }
+
+   .head-two{
+    padding-left: 50px;
+   }
+   .grid-container{
+     margin-top: -15px;
+     padding: 5px;
+   }
+   .grid-item{
+    font-size: 7px;
+   }
+   .grid-container2{
+    grid-template-columns: 47% 47%;
+
+   }
+   .grid3{
+    grid-template-columns: auto auto;
+   }
+   blockquote{
+    font-size: 16px;
+   }
+   cite{
+    font-size: 16px;
+   }
+  
+   #primary-grid{
+    padding-left: 60px;
+    
+   }
+   #secondary-grid{
+     padding-left: 40px;
+     height: 65%;
+   }
+
+   .grid5{
+    padding-left: 10px;
+    padding-top: 0px;
+   }
+   input,textarea{
+    width: 100%;
+   }
+   .nav-cta{
+    font-size: 12px;
+   }
+   .icon{
+    margin-top: -20px;
+   }
+  .grid-five{
+    grid-template-columns: auto auto;
+    padding-left: 30px;
+  }
+  .grid5{
+    border: none;
+  }
+}
+@media screen and (max-width:700px) { 
+  .nav{
+    height: 70vh;
+  }
+  li a {
+    color: gray;
+  }
+  .navbar{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .section{
+    grid-template-columns: 100%;
+  }
+  .sec-two2{
+   text-align: center;
+   padding-top: 30px;
+  
+  }
+  .icon{
+    margin: auto;
+  }
+ 
+  h1{
+    font-size: 50px;
+  }
+  .para1{
+    font-size: 40px;
+    padding-top:40px;
+  }
+  b{
+    font-size: 30px;
+  }
+
+.container-one{
+  grid-template-columns: 100%;
+}
+
+.grid1{
+  padding-left: 50px;
+  padding-bottom: 40px;
+}
+h2{
+  font-size: 35px;
+}
+.para-two{
+  font-size: 18px;
+}
+.btn{
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+.head3{
+  font-size: 18px;
+}
+.head-two{
+  padding-left: 70px;
+  font-size: 17px;
+}
+.grid-container2{
+  grid-template-columns: 100%;
+}
+.head-three{
+  font-size: 30px;
+}
+h4{
+  font-size: 25px;
+}
+.para3{
+  font-size: 20px;
+}
+.grid3{
+  grid-template-columns: 100%;
+}
+.content{
+  border: 2px solid white;
+}
+.content-three{
+  display: flex;
+  justify-content: space-between;
+}
+.content-two{
+  padding-left: 70px;
+}
+
+ul{
+  display:inline ;
+}
+
+li{
+  display: block;
+}
+blockquote{
+  font-size: 15px;
+}
+cite{
+  font-size: 20px;
+  font-weight: 500;
+}
+.grid4{
+  grid-template-columns: 100%;
+  padding-bottom: 15px;
+}
+#tertiary-grid{
+  display: none;
+}
+.grid-five{
+  grid-template-columns: 100%;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.grid5{
+  border-bottom: none;
+}
+.grid-5{
+  padding-left: 40px;
+}
+.head1{
+  margin-bottom: 15px;
+}
+.nav-cta a{
+  font-size: 15px;
+  padding-left: 30px;
+}
+}
